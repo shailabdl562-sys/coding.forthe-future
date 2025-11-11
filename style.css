@@ -1,178 +1,249 @@
-/* Global Settings */
-body {
-  font-family: 'Poppins', sans-serif;
+/* === General Styles === */
+* {
+  box-sizing: border-box;
   margin: 0;
-  background: linear-gradient(120deg, #00c6ff, #0072ff);
-  color: white;
-  transition: 0.3s;
+  padding: 0;
 }
 
-.hidden { display: none; }
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #00c6ff, #0072ff);
+  color: #fff;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
 .main-bg {
   background: linear-gradient(120deg, #0072ff, #00c6ff);
 }
 
-/* Login Page */
+/* === Login / Signup Section === */
 .login-container {
-  text-align: center;
   padding: 80px 20px;
+  max-width: 400px;
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .login-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
+  margin-bottom: 25px;
   font-weight: 600;
 }
+
 .login-title span {
   color: #ffca28;
 }
 
-.login-form, .signup-form {
+.login-form,
+.signup-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 300px;
-  margin: 40px auto;
 }
 
 input {
   padding: 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1rem;
   outline: none;
 }
 
 button {
   background: #ffca28;
-  color: #000;
   border: none;
   padding: 12px;
-  font-weight: bold;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s ease;
 }
+
 button:hover {
   background: #ffd95b;
 }
 
 .switch-text {
-  color: #ddd;
-}
-.switch-text a {
-  color: #fff;
-  font-weight: bold;
-  text-decoration: underline;
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
 
-/* Navbar */
+.switch-text a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.error-text {
+  color: #ff4f4f;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* === Navbar === */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px 30px;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
-  backdrop-filter: blur(10px);
+  z-index: 10;
 }
+
 .logo {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+  gap: 25px;
 }
+
 .navbar a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s;
 }
+
 .navbar a:hover {
-  text-decoration: underline;
+  color: #ffca28;
 }
+
 .logout {
   color: #ffca28;
   font-weight: bold;
 }
 
-/* Hero */
+/* === Hero Section === */
 .hero {
   padding: 80px 20px;
   max-width: 900px;
   margin: auto;
 }
+
 .main-title {
   font-size: 2.5rem;
   margin-bottom: 20px;
-}
-.intro {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-}
-
-/* Content */
-.subheadings h2 {
-  color: #ffca28;
-  margin-top: 30px;
-}
-.subheadings p {
-  color: #f5f5f5;
-  line-height: 1.6;
-}
-.thanks {
-  margin-top: 50px;
   color: #fff;
 }
 
-/* Build Section */
+.intro {
+  font-size: 1.2rem;
+  color: #e8f9ff;
+  margin-bottom: 40px;
+}
+
+.subheadings h2 {
+  margin-top: 25px;
+  color: #ffca28;
+}
+
+.subheadings p {
+  margin-top: 8px;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.subheadings h1 {
+  margin-top: 40px;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+/* === Build Section === */
 .build-section {
+  padding: 60px 20px;
   background: rgba(255, 255, 255, 0.1);
-  padding: 50px 20px;
-  border-radius: 10px;
-  max-width: 800px;
+  border-radius: 15px;
   margin: 60px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
+.build-section h1 {
+  color: #ffca28;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.build-section p {
+  color: #e8f9ff;
+  margin-bottom: 20px;
+}
+
 .code-example {
-  margin-top: 20px;
   text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
 }
+
 pre {
   background: #111;
+  color: #00ffcc;
   padding: 15px;
   border-radius: 10px;
-  color: #00ffcc;
   overflow-x: auto;
+  font-family: "Courier New", monospace;
+  margin-bottom: 20px;
 }
+
 .live-demo {
   width: 100%;
   height: 120px;
   border: none;
-  margin-top: 20px;
   border-radius: 10px;
 }
 
-/* Footer */
+/* === Footer === */
 .footer {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   padding: 20px 0;
   text-align: center;
-  margin-top: 40px;
+  color: #fff;
+  font-size: 0.95rem;
+  backdrop-filter: blur(5px);
+  margin-top: 50px;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* === Responsive Design === */
+@media (max-width: 700px) {
   .navbar ul {
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
   }
-  .hero {
-    padding: 50px 10px;
+
+  .login-container {
+    width: 90%;
+    padding: 40px 15px;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .hero, .build-section {
+    padding: 50px 15px;
   }
 }
+
+
+
 
 
 
