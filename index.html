@@ -3,14 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coding Future - The Power of Tomorrow</title>
+  <title>Coding - The Power of the Future</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <meta name="description" content="Coding Future - Shaping the power of tomorrow through innovation and creativity.">
-  <meta name="author" content="Shaila">
-  <link rel="canonical" href="https://coding-for-future.com">
 </head>
-
 <body>
 
   <!-- LOGIN / SIGNUP PAGE -->
@@ -52,34 +47,34 @@
     <!-- CONTENTS -->
     <section id="contents" class="hero">
       <div class="content">
-        <h1 class="main-title">Coding the Power of the Future ⚡</h1>
+        <h1 class="main-title">Coding the power of future!!!</h1>
         <p class="intro">Coding is the language of innovation — the tool that turns imagination into reality.</p>
 
         <div class="subheadings">
-          <h2>1️⃣ Coding Develops Problem-Solving Skills</h2>
-          <p>When you code, you learn to break problems into smaller pieces and solve them with logic and creativity.</p>
+          <h2>1. Coding Develops Problem-Solving Skills</h2>
+          <p>When you code, you learn to break problems into smaller pieces and solve them with your intelligence.</p>
 
-          <h2>2️⃣ Coding Powers Modern Technology</h2>
+          <h2>2. Coding Powers Modern Technology</h2>
           <p>Every app, website, and smart device is built with code — it’s the backbone of our digital world.</p>
 
-          <h2>3️⃣ Coding Expands Career Opportunities</h2>
-          <p>From engineering to AI, coding opens the door to endless industries and possibilities.</p>
+          <h2>3. Coding Expands Career Opportunities</h2>
+          <p>From engineering to IT, coding opens the door to endless industries and possibilities.</p>
 
-          <h2>4️⃣ Coding Encourages Creativity</h2>
-          <p>Whether you’re building games, websites, or apps, coding lets you bring your ideas to life.</p>
+          <h2>4. Coding Encourages Creativity</h2>
+          <p>Whether you’re building games, websites, or AI, coding lets you bring your ideas to life.</p>
 
-          <h2>5️⃣ Coding Shapes the Future</h2>
+          <h2>5. Coding Shapes the Future</h2>
           <p>The future belongs to those who can create technology — and coding makes that possible.</p>
 
-          <h1 class="thanks">With my pleasure, I want you to know this is my first ever website!!</h1>
-          <h2>THANK YOU 💖</h2>
+          <h1>With my pleasure, I want you to know this is my first ever website!!</h1>
+          <h2>THANK YOU!!!</h2>
         </div>
       </div>
     </section>
 
     <!-- BUILD SECTION -->
     <section id="build" class="build-section">
-      <h1>Build with HTML & CSS 🧠</h1>
+      <h1>Build with HTML & CSS</h1>
       <p>Here’s a simple example you can learn from:</p>
       <div class="code-example">
         <pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;
@@ -92,7 +87,7 @@
     </section>
 
     <footer class="footer">
-      <p>© 2025 <strong>Coding Future</strong> | Designed by Shaila 💻 | <a href='https://coding-for-future.com' target='_blank'>coding-for-future.com</a></p>
+      <p>© 2025 Coding Future | Built by You 💻</p>
     </footer>
   </div>
 
@@ -103,20 +98,22 @@
     const mainSite = document.querySelector('.main-site');
     const errorText = document.getElementById('errorText');
 
-    // Switch between forms
+    // Show signup form
     document.getElementById('show-signup').onclick = e => {
       e.preventDefault();
       loginForm.classList.add('hidden');
       signupForm.classList.remove('hidden');
       errorText.textContent = '';
     };
+
+    // Show login form
     document.getElementById('show-login').onclick = e => {
       e.preventDefault();
       signupForm.classList.add('hidden');
       loginForm.classList.remove('hidden');
     };
 
-    // Signup
+    // Signup logic
     signupForm.onsubmit = e => {
       e.preventDefault();
       const email = document.getElementById('signupEmail').value;
@@ -135,7 +132,7 @@
       loginForm.classList.remove('hidden');
     };
 
-    // Login
+    // Login logic
     loginForm.onsubmit = e => {
       e.preventDefault();
       const email = document.getElementById('loginEmail').value;
@@ -152,7 +149,7 @@
       }
     };
 
-    // Logout
+    // Logout logic
     document.getElementById('logoutBtn').onclick = e => {
       e.preventDefault();
       mainSite.classList.add('hidden');
@@ -163,5 +160,6 @@
   </script>
 </body>
 </html>
+
 
 
